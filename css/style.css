@@ -10,9 +10,12 @@ body{
 }
 .container{
     max-width: 955px;
-    background-color: red;
+    border: 2px solid black;
     margin: auto;
     height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
 }
 .message{
     background-color: gray;
@@ -41,6 +44,12 @@ body{
 }
 #messageInp{
     width: 92%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+}
+.btn{
+    cursor: pointer;
     border: 2px solid black;
     border-radius: 6px;
     height: 34px;
