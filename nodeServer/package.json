@@ -9,6 +9,7 @@
   "author": "RizwanUllah",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "nodemon": "^2.0.13",
     "socket.io": "^4.2.0"
   }
