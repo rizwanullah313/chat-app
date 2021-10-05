@@ -8,7 +8,7 @@
      origin: "*"
    }
  })
- // add kia cors ka code our aik error solve kia jo aloow ka eerrro araha ta
+ // add kia cors ka code our aik error solve kia jo aloow ka eerrro araha
 // const io = require("socket.io")(8000,{
 //   cors:{
 //     origin: "*"
@@ -25,5 +25,5 @@ io.on('connection', socket=>{ // socket.io instance hay jo k buhhut sarey io con
     })
     socket.on('send', message=>{
         socket.broadcast.emit('receive', {message: message, name: user[socket.id]})
-    });
+      });
 })
