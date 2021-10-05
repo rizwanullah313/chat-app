@@ -12,6 +12,13 @@ const append = (message, position)=>{
     messageContainer.append(messageElement);
 }
 
+form.addEventListener('submit',(e)=>{
+    e.preventDefault(); //ye page reload nhi karega
+    const message = messageInput.value;
+    append(`You: ${message}`, 'right');
+    socket.emit('send', message);
+    messageInput.value = ''
+})
 
 const name = prompt("Enter Your Name to join Chat");
 socket.emit('new-user-joined', name);
@@ -20,3 +27,9 @@ socket.on('user-joined', data=>{
    append(`${name} joined the chat`, 'right')
 })
 
+
+socket.on('receive', data=>{
+    append(`${data.name}: ${data.message}`, 'left')
+ })
+ 
+ 

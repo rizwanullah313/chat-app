@@ -24,6 +24,6 @@ io.on('connection', socket=>{ // socket.io instance hay jo k buhhut sarey io con
       socket.broadcast.emit('user-joined', name); //jis ne jin kia usko chor k baqi sab k emit kerdega k is ne join kia hay chat
     })
     socket.on('send', message=>{
-        socket.broadcast.emit('receive', {message: message, name: user[socket.id]})
+        socket.broadcast.emit('receive', {message: message, name: users[socket.id]})
       });
 })
