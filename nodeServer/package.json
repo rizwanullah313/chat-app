@@ -1,0 +1,15 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "This is a NodeServer for our chat application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RizwanUllah",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.13",
+    "socket.io": "^4.2.0"
+  }
+}
